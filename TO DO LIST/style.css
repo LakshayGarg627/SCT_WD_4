@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: white;
+}
+.container{
+    box-shadow: rgba(100, 100, 111, 0.2) 10px 20px 30px 2px;
+    max-width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+.container h1{
+    text-transform: uppercase;
+    background-color: #116dee;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 1rem 0rem;
+}
+.container .inputField{
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.input form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.input form input{
+    flex: 1;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+}
+input::placeholder{
+    color: rgb(196, 195, 195);
+}
+button{
+    all: unset;
+}
+.AddBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #116dee;
+    
+    border-radius: 0.5rem;
+    color: white;
+}
+button{
+    padding: 0.5rem 0.8rem;
+}
+.AddBtn:hover{
+    cursor: pointer;
+    background-color: #1553ab;
+}
+.input form i{
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.allBtn{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+.markAsDone{
+    background-color: #0ec614;
+}
+.DeleteBtn{
+    background-color: rgb(245, 6, 46);
+}
+.markAsDone:hover{
+    background-color: rgb(22, 134, 25);
+}
+.DeleteBtn:hover{
+    background-color: rgb(152, 21, 43);
+}
+
+.todoTasks{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    
+}
+.taskList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    width: 80%;
+    margin: 0.8rem auto;
+}
+.taskText{
+    font-size: 1.2rem;
+}
+.taskDate{
+    color: gray;
+    font-size:0.8rem;
+}
+.buttonDiv{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonDiv i:hover{
+    cursor: pointer;
+}
+.micBtn{
+    font-size: 1.2rem;
+}
+.micBtn:hover{
+    cursor: pointer;
+}
+
+#ChangeColorTheme{
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    background-color: black;
+    color: white;
+    padding: 0.4rem;
+    margin: 0; 
+}
+
+
+/* progress bar  */
+.progressContainer{
+    margin: 10px 0;
+    width: 50%;
+
+}
+.progressInfo{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.progressBar{
+    width: 100%;
+    height: 1rem;
+    /* border: 1px solid black; */
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#progressFill{
+    height: 100%;
+    background-color: #0ec614;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
